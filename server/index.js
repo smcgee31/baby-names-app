@@ -6,11 +6,6 @@ var mongoose = require('mongoose');
 // CONFIG //
 var config = require('./config');
 
-// CONTROLLERS //
-var UserCtrl = require('./controllers/UserCtrl');
-
-
-
 // EXPRESS //
 var app = express();
 
@@ -19,8 +14,8 @@ app.use(bodyParser.json());
 
 
 // User Endpoints
-app.post('/register', UserCtrl.register);
-app.get('/user', UserCtrl.read);
+// app.post('/register', UserCtrl.register);
+// app.get('/user', UserCtrl.read);
 
 // CONNECTIONS //
 var mongoURI = config.MONGO_URI;

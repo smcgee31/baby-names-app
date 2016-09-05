@@ -2,11 +2,12 @@
   "name": "baby-names-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "node": "node server/index.js",
     "production": "webpack -p",
-    "start": "webpack-dev-server --progress --color"
+    "start": "webpack-dev-server --progress --color",
+    "import": "mongodb/bin/mongoimport --db baby-names-app --collection names --type csv --headerline --file ./data/names.csv"
   },
   "author": "",
   "license": "ISC",
