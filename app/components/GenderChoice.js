@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+require('./genderChoice.css');
 
 export default class GenderChoice extends Component {
 

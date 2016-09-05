@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 export default class HeaderContainer extends Component {
 
-	constrctor(props){
+	constructor(props){
 		super(props);
 		this.state={};
 	}

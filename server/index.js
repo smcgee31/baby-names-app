@@ -3,19 +3,21 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
+// CONTROLLERS //
+var NamesCtrl = require('./controllers/NamesCtrl');
+
 // CONFIG //
 var config = require('./config');
 
 // EXPRESS //
 var app = express();
 
-app.use(express.static(__dirname + './../public'));
+app.use(express.static(__dirname + './../app'));
 app.use(bodyParser.json());
 
 
 // User Endpoints
-// app.post('/register', UserCtrl.register);
-// app.get('/user', UserCtrl.read);
+app.get('/names', NamesCtrl.read);
 
 // CONNECTIONS //
 var mongoURI = config.MONGO_URI;

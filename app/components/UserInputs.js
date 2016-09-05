@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import GenderChoice from '../components/GenderChoice';
+import NameFilter from '../components/NameFilter';
 
 export default class UserInputs extends Component {
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+require('./nameFilter.css');
 
 export default class NameFilter extends Component {
 
@@ -15,11 +16,12 @@ export default class NameFilter extends Component {
 						className='form-control'
 						type='text'
 						placeholder='Type name or partial name... ' />
-					<span>
+					<span className='input-group-btn' type='button'>
 						<button className='btn btn-default' type='button'> Search </button>
 					</span>
 				</div>
 			</div>
 		);
 	}
+
 }
