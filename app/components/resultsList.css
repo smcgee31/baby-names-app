@@ -1,0 +1,28 @@
+.resultsList {
+	width: 100%;
+}
+.headings_container {
+	width: 100%;
+	margin-top: 40px;
+	font-size: 20px;
+}
+.headingName,
+.headingSex,
+.headingFreq {
+	display: inline-block;
+	background-color: #337ab7;
+	border: solid 1px #DCDCDD;
+	color: #fff;
+	padding: 4px 6px;
+}
+.headingName {
+	width: 40%;
+}
+.headingSex {
+	width: 30%;
+	text-align: center;
+}
+.headingFreq {
+	width: 30%;
+	text-align: center;
+}

@@ -1,19 +1,19 @@
+
 import React, {Component} from 'react';
-import UserInputs from '../components/UserInputs';
+import {ReactRouter, Link} from 'react-router';
+import MainContainer from '../containers/MainContainer';
 
 require('./home.css');
 
 export default class Home extends Component {
-	constructor(props){
-		super(props);
-		this.state = {};
-	}
 
 	render() {
 		return (
-			<div className='home'>
-				<UserInputs />
-			</div>
+			<MainContainer>
+					<Link to='/prompt'>
+						<button className='btn btn-block btn-lg btn-success text-center' type='button'> Get Started </button>
+					</Link>
+			</MainContainer>
 		)
 	}
 }

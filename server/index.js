@@ -10,18 +10,20 @@ var NamesCtrl = require('./controllers/NamesCtrl');
 var config = require('./config');
 
 // EXPRESS //
-var app = express();
+const app = express();
 
 app.use(express.static(__dirname + './../app'));
 app.use(bodyParser.json());
 
 
-// User Endpoints
-app.get('/names', NamesCtrl.read);
+// ENDPOINTS //
+app.get('/names/:Name', NamesCtrl.findName);
+// app.get('/names', NamesCtrl.read);
+
 
 // CONNECTIONS //
-var mongoURI = config.MONGO_URI;
-var port = config.PORT;
+const mongoURI = config.MONGO_URI;
+const port = config.PORT;
 
 mongoose.connect(mongoURI);
 mongoose.connection.once('open', function() {

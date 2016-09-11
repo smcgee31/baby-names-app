@@ -1,0 +1,19 @@
+.single_result {
+	width: 100%;
+	font-size: 16px;
+}
+.name,
+.sex,
+.frequency {
+	display: inline-block;
+	border: solid 1px #DCDCDD;
+	padding: 4px 6px;
+}
+.name {
+	width: 40%;
+}
+.sex,
+.frequency {
+	width: 30%;
+	text-align: center;
+}
