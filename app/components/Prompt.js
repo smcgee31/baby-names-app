@@ -34,7 +34,7 @@ export default class Prompt extends Component {
 						value={ this.state.searchTerm }
 					/>
 					<span type='button'>
-						<button className='input_btn' type='button'> Search </button>
+						<button className='input_btn' type='submit'> Search </button>
 					</span>
 				</form>
 			</div>
