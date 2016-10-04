@@ -10,9 +10,9 @@ export default class Home extends Component {
 	render() {
 		return (
 			<MainContainer>
-					<Link to='/prompt'>
-						<button className='btn btn-block btn-lg btn-success text-center' type='button'> Get Started </button>
-					</Link>
+				<Link to='/prompt'>
+					<button className='btn btn-block btn-lg btn-success text-center' type='button'> Get Started </button>
+				</Link>
 			</MainContainer>
 		)
 	}
