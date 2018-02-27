@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import Prompt from '../components/Prompt';
-import ResultsList from '../components/ResultsList';
+import axios 								from 'axios';
+import Prompt 							from '../components/Prompt';
+import ResultsList 					from '../components/ResultsList';
 
 export default class PromptContainer extends Component {
 
@@ -13,7 +13,7 @@ export default class PromptContainer extends Component {
 	}
 
 	handleSearch(searchTerm) {
-		return axios.get('http://localhost:4000/names/' + searchTerm)
+		return axios.get('http://localhost:3000/names/' + searchTerm)
 		// originally I had `.then(function (response) {` on line 18 but it didn't work becuase of `this` not being bound but the arrow function takes care of that!
 		.then((response) => {
 			// return response.data;
@@ -29,7 +29,6 @@ export default class PromptContainer extends Component {
 			<div>
 				<Prompt onSearch={ this.handleSearch.bind(this) }/>
 				<ResultsList results={ this.state.results }/>
-				<Pagination />
 			</div>
 		);
 	}
